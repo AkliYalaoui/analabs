@@ -1,0 +1,22 @@
+{
+    "projects" : [
+        {
+            "id" : 1,
+            "launchedAt" : "2021-10-05",
+            "title" : "Adsil official website",
+            "description" : "The official website for an algerian startup called ADSIL.",
+            "images" : ["/static/adsil/1.jpeg"],
+            "techs" : ["reactJs","tailwindCss"],
+            "links" : ["https://adsil.netlify.app/"]
+        },
+        {
+            "id" : 2,
+            "launchedAt" : "2021-08-25",
+            "title" : "React-algeria-map",
+            "description" : "A react component that displays an interactive map of Algeria including all 58 wilayas",
+            "images" :["/static/react-algeria-map/1.jpeg"],
+            "techs" : ["reactJs","svg","css"],
+            "links" : ["https://www.npmjs.com/package/react-algeria-map","https://github.com/AkliYalaoui/react-algeria-map"]
+        }
+    ]
+}
