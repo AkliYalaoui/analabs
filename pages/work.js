@@ -46,7 +46,7 @@ const work = ({ projects }) => {
                 </Stack>
                 <Stack spacing={1}>
                   {project.links.map((link) => (
-                    <Link key={link} href={link} target="_blank" rel="noopener">
+                    <Link key={link} href={link} target="_blank" rel="noreferrer noopener">
                       # {link}
                     </Link>
                   ))}

@@ -42,13 +42,13 @@ const CoFounder = ({
         justifyContent="center"
         alignItems="center"
       >
-        <a href={facebook} target="_blank" rel="noopener">
+        <a href={facebook} target="_blank" rel="noreferrer noopener">
           <FacebookIcon />
         </a>
-        <a href={instagram} target="_blank" rel="noopener">
+        <a href={instagram} target="_blank" rel="noreferrer noopener">
           <InstagramIcon />
         </a>
-        <a href={github} target="_blank" rel="noopener">
+        <a href={github} target="_blank" rel="noreferrer noopener">
           <GitHubIcon />
         </a>
       </Stack>

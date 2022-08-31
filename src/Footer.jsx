@@ -22,20 +22,20 @@ const Footer = () => {
             <Stack spacing={1}>
               <Link href="/about">About Us</Link>
               <Link href="/contact">Contact Us</Link>
-              <a href="#" target="_blank" rel="noopener">
+              <a href="#" target="_blank" rel="noreferrer noopener">
                 +213
               </a>
             </Stack>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Stack spacing={1}>
-              <a href="#" target="_blank" rel="noopener">
+              <a href="#" target="_blank" rel="noreferrer noopener">
                 Facebook
               </a>
-              <a href="#" target="_blank" rel="noopener">
+              <a href="#" target="_blank" rel="noreferrer noopener">
                 Instagram
               </a>
-              <a href="#" target="_blank" rel="noopener">
+              <a href="#" target="_blank" rel="noreferrer noopener">
                 Email
               </a>
             </Stack>
