@@ -21,7 +21,7 @@ const WorkFlow = () => {
     >
       <Container maxWidth="md" component="section">
         <Typography variant="h3" align="center" color="white" mb={6}>
-          <span className="curvedUnderline">WorkFlow : How it's done</span>
+          <span className="curvedUnderline">WorkFlow : How it&apos;s done</span>
         </Typography>
         <Timeline position="alternate">
           <TimelineItem>
