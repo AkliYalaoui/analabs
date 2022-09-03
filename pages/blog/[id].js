@@ -11,7 +11,13 @@ const Post = ({ postData }) => {
       </Head>
       <Container
         maxWidth="md"
-        sx={{ border: "1px solid #333", borderRadius: "10px", padding: "5px",marginBottom:"15px" }}
+        sx={{
+          border: "1px solid #333",
+          borderRadius: "10px",
+          padding: "5px",
+          marginBottom: "15px",
+          marginTop: 15,
+        }}
       >
         <div
           style={{

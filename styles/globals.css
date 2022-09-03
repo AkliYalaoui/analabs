@@ -1,3 +1,39 @@
 a {
-    color : inherit
+  color: inherit;
+  cursor: pointer;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.curvedUnderline{
+  position: relative;
+  margin-right: 1rem;
+}
+
+.curvedUnderline:after{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  border: 2px solid #e15f41;
+  border-color: #e15f41 transparent transparent transparent;
+  border-radius: 50%;
+  clip-path: inset(0 0 50% 0);
 }

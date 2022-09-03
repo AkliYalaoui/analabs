@@ -2,6 +2,7 @@ import Head from "next/head";
 import HeaderSection from "../src/HeaderSection";
 import Services from "../src/Services";
 import LatestWork from "../src/LatestWork";
+import WorkFlow from "../src/WorkFlow";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       </header>
       <main style={{ margin: "60px 0" }}>
         <Services />
+        <WorkFlow />
         <LatestWork />
       </main>
     </div>

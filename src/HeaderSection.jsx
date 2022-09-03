@@ -1,44 +1,63 @@
 import { Box, Container, Typography, Button } from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
-import bg from "../public/bg.gif";
 import EmailIcon from "@mui/icons-material/Email";
 
 const HeaderSection = () => {
   return (
-    <Container maxWidth="lg" sx={{ padding: 2 }}>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        backgroundImage: "url('/bg.jpg')",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        position: "relative",
+      }}
+    >
       <Box
-        component="section"
         sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          height: "100%",
+          width: "100%",
+          backgroundColor: "rgba(0,0,0,.5)",
         }}
+      ></Box>
+      <Container
+        maxWidth="md"
+        sx={{ padding: 2, position: "relative", zIndex: "2" }}
       >
-        <Box sx={{ flex: 2 }}>
+        <Box
+          component="section"
+          align="center"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: 15,
+          }}
+        >
           <Typography
             variant="h1"
             component="h2"
             fontWeight="bold"
+            color="#fff"
             gutterBottom
           >
             We develop high quality products.
           </Typography>
-          <Typography variant="h6" color="text.secondary" paragraph>
+          <Typography variant="h6" color="#eee" paragraph>
             We are a team of computer science freelancers specialized in web
             developement, <br />
-            mobile developement and AI who will make your ideas concret.
+            mobile developement and AI who will make your ideas alive.
           </Typography>
+          <Button variant="contained" size="large">
+            Contact Us
+          </Button>
         </Box>
-        <Box sx={{ flex: 1 }}>
-          <Image src={bg} alt='hero image'/>
-        </Box>
-      </Box>
-
-      <Button variant="contained" startIcon={<EmailIcon />} size="large">
-        <Link href="/contact">Get in touch</Link>
-      </Button>
-    </Container>
+      </Container>
+    </Box>
   );
 };
 

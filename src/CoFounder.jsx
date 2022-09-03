@@ -14,7 +14,7 @@ const CoFounder = ({
   instagram,
 }) => {
   return (
-    <Paper elevation={3} sx={{ padding: 2 }}>
+    <Paper elevation={3} sx={{ padding: 2,borderBottom:"2px solid #e15f41" }}>
       <div
         style={{
           width: "180px",
@@ -42,13 +42,13 @@ const CoFounder = ({
         justifyContent="center"
         alignItems="center"
       >
-        <a href={facebook} target="_blank" rel="noreferrer noopener">
-          <FacebookIcon />
+        <a href={facebook} target="_blank" rel="noreferrer noopener" style={{color:"#4267B2"}}>
+          <FacebookIcon/>
         </a>
-        <a href={instagram} target="_blank" rel="noreferrer noopener">
+        <a href={instagram} target="_blank" rel="noreferrer noopener" style={{color:"#C13584"}}>
           <InstagramIcon />
         </a>
-        <a href={github} target="_blank" rel="noreferrer noopener">
+        <a href={github} target="_blank" rel="noreferrer noopener" style={{color:"#333"}}>
           <GitHubIcon />
         </a>
       </Stack>

@@ -1,5 +1,5 @@
 ---
-thumbnail : '/static/react-algeria-map/1.jpeg'
+thumbnail : '/static/react-algeria-map/1.png'
 title : 'How to use the map of algeria in reactJs ?'
 author : 'Akli YALAOUI - Web developer & data scientist'
 keywords : ['reactJs','React components','Interactive map']
@@ -24,15 +24,30 @@ The component is very easy to use, first import it then call it as a regular rea
 import { Map } from 'react-algeria-map';
 
 <Map
-    height="400px"
-    width="400px"
-    data={data}
-    onWilayaClick={(wilaya, value) => console.log(wilaya, value)}
+  color="#55E6C1"
+  HoverColor="#58B19F"
+  stroke="#fff"
+  hoverStroke="#218c74"
+  height="400px"
+  width="400px"
+  data={data}
+  onWilayaClick={(wilaya, data) => console.log(wilaya, data)}
 />
 ```
 
-## Customization
+## Props
+| Prop          | Type                                                     | Description                                                                                                                                                              |
+|---------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| color         | string                                                   | Set the color of the wilayas in the map                                                                                                                                  |
+| HoverColor    | string                                                   | Set the color of the hovered wilaya                                                                                                                                      |
+| stroke        | string                                                   | Set the color of the borders of the wilayas                                                                                                                              |
+| hoverStroke   | string                                                   | Set the color of the borders of the hovered wilaya                                                                                                                       |
+| height        | string                                                   | Set the occupied height by the map                                                                                                                                       |
+| width         | string                                                   | Set the occupied width by the map                                                                                                                                        |
+| data          | object                                                   | Sets the data to show in hover or click actions on each wilaya. <br>The keys are fixed and are the wilayas, the values of the keys <br>can be anything you want to show. |
+| onWilayaClick | function(key:string,value: string\|number\|boolean):void | The callback function to execute when the wilaya is being clicked
 
+## Data Property
 The data prop is just an object where each key is the name of the wilaya and its value is what's displayed when the wilaya being hovered or clicked. So keys are fixed and you are free to set the values for whatever you want.
 
 ```jsx

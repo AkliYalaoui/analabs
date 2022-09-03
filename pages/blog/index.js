@@ -14,9 +14,9 @@ const blog = ({ allBlogsData }) => {
           content="Analabs blog ... here we share our thoughts and our work clearly explained."
         />
       </Head>
-      <Container maxWidth="lg" component="section">
+      <Container maxWidth="lg" component="section" sx={{marginTop:15}}>
         <Typography variant="h2" fontWeight="bold" component="h2" gutterBottom>
-          Written by us
+        <span className="curvedUnderline"> Written by us</span>
         </Typography>
         <Typography variant="h5" color="text.secondary" paragraph mb={5}>
           Sharing our thoughts and experience
@@ -24,12 +24,12 @@ const blog = ({ allBlogsData }) => {
         </Typography>
         <Grid container spacing={4}>
           {allBlogsData.map((blogData) => (
-            <Grid item key={blogData.title} xs={12} sm={6} md={4}>
+            <Grid item key={blogData.title} xs={12} sm={6}>
               <Paper sx={{ padding: 2 }} elevation={3}>
                 <div
                   style={{
                     width: "100%",
-                    height: "200px",
+                    height: "250px",
                     position: "relative",
                   }}
                 >

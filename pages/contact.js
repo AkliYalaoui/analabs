@@ -22,103 +22,84 @@ const contact = () => {
           content="The official website for the ANAlabas team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
         />
       </Head>
-      <Container maxWidth="lg" component="section">
-        <Typography variant="h2" fontWeight="bold" component="h2" gutterBottom>
-          Get in touch with us now
+      <Container maxWidth="md" component="section" sx={{ marginTop: 15 }}>
+        <Typography variant="h2" fontWeight="bold" align="center" component="h2" gutterBottom>
+          <span className="curvedUnderline">Get in touch with us now</span>
         </Typography>
-        <Typography variant="h5" color="text.secondary" paragraph mb={3}>
+        <Typography variant="h5" color="text.secondary" align="center" paragraph mb={3}>
           What problems can we resolve for you ? <br />
           we reply instantly
         </Typography>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
-            <Box component="form" onSubmit={handleSubmit}>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    id="firstName"
-                    label="First Name"
-                    variant="outlined"
-                    required
-                    margin="normal"
-                    fullWidth
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    id="lastName"
-                    label="Last Name"
-                    variant="outlined"
-                    required
-                    margin="normal"
-                    fullWidth
-                  />
-                </Grid>
-              </Grid>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    id="email"
-                    label="Email"
-                    variant="outlined"
-                    type="email"
-                    required
-                    margin="normal"
-                    fullWidth
-                  />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                  <TextField
-                    id="phone"
-                    label="Phone Number"
-                    variant="outlined"
-                    margin="normal"
-                    type="tel"
-                    fullWidth
-                  />
-                </Grid>
-              </Grid>
+        <Box component="form" onSubmit={handleSubmit}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
               <TextField
-                id="subject"
-                label="Subject"
+                id="firstName"
+                label="First Name"
                 variant="outlined"
-                margin="normal"
                 required
+                margin="normal"
                 fullWidth
               />
+            </Grid>
+            <Grid item xs={12} sm={6}>
               <TextField
-                id="message"
-                label="Message"
+                id="lastName"
+                label="Last Name"
                 variant="outlined"
-                margin="normal"
-                multiline
-                rows={6}
                 required
+                margin="normal"
                 fullWidth
               />
-              <Box mt={2} align="right">
-                <Button type="submit" variant="contained" size="large">
-                  Get in touch
-                </Button>
-              </Box>
-            </Box>
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <div
-              style={{
-                width: "100%",
-                height: "100%",
-                position: "relative",
-              }}
-            >
-              <Image
-                src="/static/contact.gif"
-                alt="Get in touch with us"
-                layout="fill"
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                id="email"
+                label="Email"
+                variant="outlined"
+                type="email"
+                required
+                margin="normal"
+                fullWidth
               />
-            </div>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                id="phone"
+                label="Phone Number"
+                variant="outlined"
+                margin="normal"
+                type="tel"
+                fullWidth
+              />
+            </Grid>
           </Grid>
-        </Grid>
+          <TextField
+            id="subject"
+            label="Subject"
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+          />
+          <TextField
+            id="message"
+            label="Message"
+            variant="outlined"
+            margin="normal"
+            multiline
+            rows={6}
+            required
+            fullWidth
+          />
+          <Box mt={2} align="right">
+            <Button type="submit" variant="contained" size="large">
+              Get in touch
+            </Button>
+          </Box>
+        </Box>
       </Container>
     </>
   );

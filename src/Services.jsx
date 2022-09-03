@@ -1,61 +1,55 @@
 import {
   Grid,
-  Card,
-  CardContent,
   Typography,
-  CardMedia,
   Paper,
   Box,
   Container,
 } from "@mui/material";
 
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import LaptopIcon from "@mui/icons-material/Laptop";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+
 const servicesList = [
   {
-    media: "/static/mob.gif",
-    title: "android/ios applications",
+    icon: <PhoneAndroidIcon color="primary" sx={{ fontSize: 80 }} />,
+    title: "Mobile Applications",
     description:
-      "we build modern and attractive mobile applications using flutter UI framework which are powered by firebase/nodeJs backend",
+      "we build modern and attractive mobile applications using flutter UI framework.",
   },
   {
-    media: "/static/react.gif",
-    title: "web applications",
+    icon: <LaptopIcon color="primary" sx={{ fontSize: 80 }} />,
+    title: "Web Applications",
     description:
-      "we develop robust apps, static or dynamic websites. We use reactJs/nextJs for the frontend and nodeJs/python for the backend",
+      "we develop robust applications using reactJs for the frontend and nodeJs for the backend",
   },
   {
-    media: "/static/ds.gif",
-    title: "AI solutions",
+    icon: <SmartToyIcon color="primary" sx={{ fontSize: 80 }} />,
+    title: "AI Solutions",
     description:
-      "we build powerful ML/DL models, from data preprocessing and exploratory data analysis to model building using python/R ",
+      "we build powerful ML/DL models, perform data analysis using python/R ",
   },
 ];
 const Services = () => {
   return (
-    <Box sx={{ backgroundColor: "#dfe4ea",padding:5 }}>
+    <Box sx={{ padding: 5 }}>
       <Container maxWidth="lg" component="section">
-        <Typography variant="h3" align="center" mb={4}>
-          Our Services
+        <Typography variant="h3" align="center" color="text.secondary" mb={6}>
+          <span className="curvedUnderline">Our Services</span>
         </Typography>
         <Grid container spacing={4}>
           {servicesList.map((service) => (
             <Grid key={service.title} item xs={12} sm={6} md={4}>
-              <Paper elevation={3}>
-                <Card sx={{backgroundColor:"#0984e3",color:"#fff"}}>
-                  <CardMedia
-                    component="img"
-                    height="250"
-                    image={service.media}
-                    alt={service.title}
-                  />
-                  <CardContent align="center">
-                    <Typography gutterBottom variant="h5" component="h4">
-                      {service.title}
-                    </Typography>
-                    <Typography variant="body2" color="#dfe4ea">
-                      {service.description}
-                    </Typography>
-                  </CardContent>
-                </Card>
+              <Paper sx={{ padding: 2 }} elevation={3}>
+                <Box align="center">{service.icon}</Box>
+                <Box align="center">
+                  <Typography gutterBottom variant="h5" component="h4">
+                    {service.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {service.description}
+                  </Typography>
+                </Box>
               </Paper>
             </Grid>
           ))}

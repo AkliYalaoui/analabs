@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Grid, Divider } from "@mui/material";
+import { Box, Container, Typography, Grid } from "@mui/material";
 import { Stack } from "@mui/system";
 import Link from "next/link";
 import React from "react";
@@ -6,11 +6,11 @@ import React from "react";
 const Footer = () => {
   return (
     <Box
-      sx={{ marginTop: 14, padding: 4, backgroundColor: "#dfe4ea" }}
+      sx={{ marginTop: 14, padding: 4, backgroundColor: "#111", color: "#fff" }}
       component="footer"
     >
       <Container maxWidth="md" sx={{ mb: 2 }}>
-        <Grid container spacing={2} >
+        <Grid container spacing={2}>
           <Grid item xs={12} sm={4}>
             <Stack spacing={1}>
               <Link href="/">Home</Link>
@@ -42,7 +42,6 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Container>
-      <Divider />
       <Typography align="center" variant="body1" mt={2}>
         All rights reserved {new Date().getFullYear()} &copy;{" "}
         <span style={{ fontWeight: "bold" }}>ANALABS</span>
