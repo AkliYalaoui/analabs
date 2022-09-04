@@ -51,5 +51,5 @@ table {
 }
 
 .mui-style-ha3bif-MuiTimelineItem-root:before{
-  content: unset !important;
+  content: none !important;
 }
