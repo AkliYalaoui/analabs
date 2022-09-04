@@ -50,6 +50,7 @@ table {
   display: block;
 }
 
-.mui-style-ha3bif-MuiTimelineItem-root:before{
+.mui-style-ha3bif-MuiTimelineItem-root:before,
+.mui-style-1rcbby2:before {
   content: none !important;
 }
