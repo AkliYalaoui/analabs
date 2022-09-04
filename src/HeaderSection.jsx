@@ -5,7 +5,8 @@ const HeaderSection = () => {
   return (
     <Box
       sx={{
-        minHeight: "100vh",
+        height: "100vh",
+        maxHeight: "600px",
         backgroundImage: "url('/bg.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -39,7 +40,7 @@ const HeaderSection = () => {
           }}
         >
           <Typography
-            variant="h1"
+            sx={{ typography: { md: "h1", sm: "h2", xs: "h3" } }}
             component="h2"
             fontWeight="bold"
             color="#fff"
@@ -47,14 +48,16 @@ const HeaderSection = () => {
           >
             We develop high quality products.
           </Typography>
-          <Typography variant="h6" color="#eee" paragraph>
+          <Typography
+            sx={{ typography: { sm: "h6", xs: "body1" } }}
+            color="#eee"
+            paragraph
+          >
             We are a team of computer science freelancers specialized in web
             developement, <br />
             mobile developement and AI who will make your ideas alive.
           </Typography>
-          <Button variant="contained" size="large">
-            Contact Us
-          </Button>
+          <Button variant="contained">Contact Us</Button>
         </Box>
       </Container>
     </Box>

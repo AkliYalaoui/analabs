@@ -1,4 +1,5 @@
-import { Typography, Container, Box } from "@mui/material";
+import { Typography, Container, Box, useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import {
   Timeline,
   TimelineItem,
@@ -15,15 +16,23 @@ import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 
 const WorkFlow = () => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+
   return (
     <Box
       sx={{ backgroundColor: "#111", color: "#fff", padding: 4, marginTop: 8 }}
     >
       <Container maxWidth="md" component="section">
-        <Typography variant="h3" align="center" color="white" mb={6}>
+        <Typography
+          sx={{ typography: { sm: "h3", xs: "h4" } }}
+          align="center"
+          color="white"
+          mb={6}
+        >
           <span className="curvedUnderline">WorkFlow : How it&apos;s done</span>
         </Typography>
-        <Timeline position="alternate">
+        <Timeline position={matches ? "alternate" : "right"}>
           <TimelineItem>
             <TimelineSeparator>
               <TimelineConnector sx={{ bgcolor: "primary.main" }} />

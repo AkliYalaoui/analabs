@@ -14,7 +14,7 @@ const CoFounder = ({
   instagram,
 }) => {
   return (
-    <Paper elevation={3} sx={{ padding: 2,borderBottom:"2px solid #e15f41" }}>
+    <Paper elevation={3} sx={{ padding: 2,borderBottom:"2px solid #c44569" }}>
       <div
         style={{
           width: "180px",

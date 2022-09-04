@@ -6,17 +6,15 @@ const Post = ({ postData }) => {
   return (
     <>
       <Head>
-        <title>{postData.title}</title>
+        <title>ANALABS | {postData.title}</title>
         <meta name="description" content={postData.description} />
       </Head>
       <Container
         maxWidth="md"
         sx={{
-          border: "1px solid #333",
-          borderRadius: "10px",
-          padding: "5px",
-          marginBottom: "15px",
           marginTop: 15,
+          marginBottom: "15px",
+          padding: 2,
         }}
       >
         <div
@@ -24,18 +22,29 @@ const Post = ({ postData }) => {
             width: "100%",
             height: "400px",
             position: "relative",
+            border: "1px solid #333",
+            borderRadius: "10px",
+            overflow: "hidden",
           }}
         >
           <Image src={postData.thumbnail} alt={postData.title} layout="fill" />
         </div>
       </Container>
-      <Container maxWidth="sm" component="section">
-        <Typography variant="h2" component="h2" fontWeight="bold" gutterBottom>
+      <Container maxWidth="sm" component="section" sx={{ padding: 3 }}>
+        <Typography
+          sx={{ typography: { md: "h2", sm: "h3", xs: "h4" } }}
+          component="h2"
+          fontWeight="bold"
+          gutterBottom
+        >
           {postData.title}
         </Typography>
         <Date dateString={postData.date} />
         <br />
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+          style={{ overflowX: "hidden" }}
+        />
       </Container>
     </>
   );

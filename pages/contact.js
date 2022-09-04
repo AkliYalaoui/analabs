@@ -23,10 +23,22 @@ const contact = () => {
         />
       </Head>
       <Container maxWidth="md" component="section" sx={{ marginTop: 15 }}>
-        <Typography variant="h2" fontWeight="bold" align="center" component="h2" gutterBottom>
+        <Typography
+          sx={{ typography: { sm: "h2", xs: "h3" } }}
+          fontWeight="bold"
+          align="center"
+          component="h2"
+          gutterBottom
+        >
           <span className="curvedUnderline">Get in touch with us now</span>
         </Typography>
-        <Typography variant="h5" color="text.secondary" align="center" paragraph mb={3}>
+        <Typography
+          sx={{ typography: { sm: "h5", xs: "h6" } }}
+          color="text.secondary"
+          align="center"
+          paragraph
+          mb={3}
+        >
           What problems can we resolve for you ? <br />
           we reply instantly
         </Typography>
@@ -38,7 +50,7 @@ const contact = () => {
                 label="First Name"
                 variant="outlined"
                 required
-                margin="normal"
+                margin="dense"
                 fullWidth
               />
             </Grid>
@@ -48,7 +60,7 @@ const contact = () => {
                 label="Last Name"
                 variant="outlined"
                 required
-                margin="normal"
+                margin="dense"
                 fullWidth
               />
             </Grid>
@@ -61,7 +73,7 @@ const contact = () => {
                 variant="outlined"
                 type="email"
                 required
-                margin="normal"
+                margin="dense"
                 fullWidth
               />
             </Grid>
@@ -70,7 +82,7 @@ const contact = () => {
                 id="phone"
                 label="Phone Number"
                 variant="outlined"
-                margin="normal"
+                margin="dense"
                 type="tel"
                 fullWidth
               />
@@ -80,7 +92,7 @@ const contact = () => {
             id="subject"
             label="Subject"
             variant="outlined"
-            margin="normal"
+            margin="dense"
             required
             fullWidth
           />
@@ -88,7 +100,7 @@ const contact = () => {
             id="message"
             label="Message"
             variant="outlined"
-            margin="normal"
+            margin="dense"
             multiline
             rows={6}
             required

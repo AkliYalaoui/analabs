@@ -1,6 +1,7 @@
 a {
   color: inherit;
   cursor: pointer;
+  text-decoration: none;
 }
 
 table,
@@ -20,20 +21,35 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.curvedUnderline{
+.curvedUnderline {
   position: relative;
   margin-right: 1rem;
 }
 
-.curvedUnderline:after{
+.curvedUnderline:after {
   content: "";
   position: absolute;
   bottom: -30px;
   left: 0;
   height: 30px;
   width: 100%;
-  border: 2px solid #e15f41;
-  border-color: #e15f41 transparent transparent transparent;
+  border: 2px solid #c44569;
+  border-color: #c44569 transparent transparent transparent;
   border-radius: 50%;
   clip-path: inset(0 0 50% 0);
+}
+
+pre {
+  overflow-x: auto;
+}
+
+table {
+  max-width: 100%;
+  border: none;
+  overflow-x: auto;
+  display: block;
+}
+
+.mui-style-ha3bif-MuiTimelineItem-root:before{
+  content: unset !important;
 }

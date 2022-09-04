@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Container, Typography, Paper, Grid } from "@mui/material";
+import { Container, Typography, Grid } from "@mui/material";
 import CoFounder from "../src/CoFounder";
 
 const about = () => {
@@ -12,25 +12,32 @@ const about = () => {
           content="The official website for the ANAlabas team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
         />
       </Head>
-      <Container maxWidth="lg" component="section" sx={{ marginTop: 15 }}>
-        <Typography variant="h2" fontWeight="bold" component="h2" gutterBottom>
-          We create scalable <br /> digital
-          solutions
-        </Typography>
-        <Typography variant="h5" color="text.secondary" paragraph mb={5}>
-          Our team of engineers build high quality, scalable web and <br />
-          mobile applications and AI solutions. We share the same passion
-          <br /> which is computer science, we let our work speak about us and
-          <br />
-          we are proud of what we do.
-        </Typography>
+      <Container
+        maxWidth="md"
+        align="center"
+        component="section"
+        sx={{ marginTop: 15 }}
+      >
         <Typography
-          variant="h4"
+          sx={{ typography: { sm: "h2", xs: "h3" } }}
           fontWeight="bold"
           component="h2"
-          align="center"
+          gutterBottom
+        >
+          We create scalable digital solutions
+        </Typography>
+        <Typography
+          sx={{ typography: { sm: "h5", xs: "h6" } }}
+          color="text.secondary"
+          paragraph
           mb={5}
         >
+          Our team of engineers build high quality, scalable web and mobile
+          applications and AI solutions. We share the same passion which is
+          computer science, we let our work speak about us and we are proud of
+          what we do.
+        </Typography>
+        <Typography variant="h4" fontWeight="bold" component="h2" mb={5}>
           <span className="curvedUnderline">Meet the team</span>
         </Typography>
         <Grid container spacing={2}>

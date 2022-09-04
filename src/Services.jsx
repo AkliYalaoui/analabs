@@ -1,10 +1,4 @@
-import {
-  Grid,
-  Typography,
-  Paper,
-  Box,
-  Container,
-} from "@mui/material";
+import { Grid, Typography, Paper, Box, Container } from "@mui/material";
 
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import LaptopIcon from "@mui/icons-material/Laptop";
@@ -34,7 +28,12 @@ const Services = () => {
   return (
     <Box sx={{ padding: 5 }}>
       <Container maxWidth="lg" component="section">
-        <Typography variant="h3" align="center" color="text.secondary" mb={6}>
+        <Typography
+          sx={{ typography: { sm: "h3", xs: "h4" } }}
+          align="center"
+          color="text.secondary"
+          mb={6}
+        >
           <span className="curvedUnderline">Our Services</span>
         </Typography>
         <Grid container spacing={4}>

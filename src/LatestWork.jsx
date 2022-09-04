@@ -12,17 +12,25 @@ import {
 const LatestWork = () => {
   return (
     <Container maxWidth="md" component="section" sx={{ marginTop: 8 }}>
-      <Typography variant="h3" align="center" color="text.secondary" mb={6}>
+      <Typography
+        sx={{ typography: { sm: "h3", xs: "h4" } }}
+        align="center"
+        color="text.secondary"
+        mb={6}
+      >
         <span className="curvedUnderline"> Latest Work</span>
       </Typography>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6}>
           <Paper
-            sx={{ padding: 2, borderTop: "2px solid #e15f41" }}
+            sx={{ padding: 2, borderTop: "2px solid #c44569" }}
             align="center"
             elevation={3}
           >
-            <Typography variant="h3" gutterBottom>
+            <Typography
+              sx={{ typography: { sm: "h3", xs: "h4" } }}
+              gutterBottom
+            >
               Videvet
             </Typography>
             <Typography paragraph color="text.secondary" gutterBottom>
@@ -41,11 +49,14 @@ const LatestWork = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <Paper
-            sx={{ padding: 2, borderTop: "2px solid #e15f41" }}
+            sx={{ padding: 2, borderTop: "2px solid #c44569" }}
             align="center"
             elevation={3}
           >
-            <Typography variant="h3" gutterBottom>
+            <Typography
+              sx={{ typography: { sm: "h3", xs: "h4" } }}
+              gutterBottom
+            >
               ADtech
             </Typography>
             <Typography paragraph color="text.secondary" gutterBottom>

@@ -20,30 +20,51 @@ const work = ({ projects }) => {
           content="Analabs Projects ... here we present our previous projects"
         />
       </Head>
-      <Container maxWidth="lg" component="section" sx={{ marginTop: 15 }}>
-        <Typography variant="h2" fontWeight="bold" component="h2" gutterBottom>
+      <Container maxWidth="md" component="section" sx={{ marginTop: 15 }}>
+        <Typography
+          sx={{ typography: { sm: "h2", xs: "h3" } }}
+          fontWeight="bold"
+          component="h2"
+          gutterBottom
+          align="center"
+        >
           <span className="curvedUnderline"> Made in our labs</span>
         </Typography>
-        <Typography variant="h5" color="text.secondary" paragraph mb={5}>
-          Here we present our real world projects <br />
-          and our open source contributions.
+        <Typography
+          sx={{ typography: { sm: "h5", xs: "h6" } }}
+          color="text.secondary"
+          paragraph
+          mb={5}
+          align="center"
+        >
+          Here we present our real world projects and our open source
+          contributions.
         </Typography>
         <Grid container spacing={4}>
           {projects.map((project) => (
             <Grid item xs={12} md={6} key={project.id}>
-              <Paper sx={{padding:2}} elevation={3}>
-                <Typography variant="h3" gutterBottom>
+              <Paper sx={{ padding: 2 }} elevation={3}>
+                <Typography
+                  sx={{ typography: { sm: "h3", xs: "h4" } }}
+                  gutterBottom
+                  align="center"
+                >
                   {project.title}
                 </Typography>
-                <Typography paragraph color="text.secondary" gutterBottom>
+                <Typography
+                  paragraph
+                  color="text.secondary"
+                  align="center"
+                  gutterBottom
+                >
                   {project.description}
                 </Typography>
                 <div
                   style={{
-                    marginTop:"10px",
-                    marginBottom:"10px",
+                    marginTop: "10px",
+                    marginBottom: "10px",
                     width: "100%",
-                    height: "400px",
+                    height: "300px",
                     position: "relative",
                   }}
                 >
