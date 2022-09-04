@@ -19,6 +19,14 @@ const work = ({ projects }) => {
           name="description"
           content="Analabs Projects ... here we present our previous projects"
         />
+        <meta property="og:url" content="/work" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="ANALABS | Projects" />
+        <meta
+          property="og:description"
+          content="Made in our labs. Here we present our real world projects and our open source contributions."
+        />
+        <meta property="og:image" content={projects[0].images[0]} />
       </Head>
       <Container maxWidth="md" component="section" sx={{ marginTop: 15 }}>
         <Typography

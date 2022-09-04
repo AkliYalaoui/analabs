@@ -13,6 +13,14 @@ const blog = ({ allBlogsData }) => {
           name="description"
           content="Analabs blog ... here we share our thoughts and our work clearly explained."
         />
+        <meta property="og:url" content="/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="ANALABS | Blog" />
+        <meta
+          property="og:description"
+          content="Check out all blogs written by the analabs team"
+        />
+        <meta property="og:image" content={allBlogsData[0].thumbnail} />
       </Head>
       <Container maxWidth="md" component="section" sx={{ marginTop: 15 }}>
         <Typography

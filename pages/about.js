@@ -11,6 +11,14 @@ const about = () => {
           name="description"
           content="The official website for the ANAlabas team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
         />
+        <meta property="og:url" content="/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="ANALABS | About" />
+        <meta
+          property="og:description"
+          content="Our team of engineers build high quality, scalable web and mobile applications and AI solutions. We share the same passion which is computer science, we let our work speak about us and we are proud of what we do."
+        />
+        <meta property="og:image" content="/favicon.ico" />
       </Head>
       <Container
         maxWidth="md"

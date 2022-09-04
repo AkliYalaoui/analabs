@@ -8,6 +8,11 @@ const Post = ({ postData }) => {
       <Head>
         <title>ANALABS | {postData.title}</title>
         <meta name="description" content={postData.description} />
+        <meta property="og:url" content={`/blog/${postData.id}`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={postData.title} />
+        <meta property="og:description" content={postData.description} />
+        <meta property="og:image" content={postData.thumbnail} />
       </Head>
       <Container
         maxWidth="md"

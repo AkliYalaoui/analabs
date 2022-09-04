@@ -21,6 +21,14 @@ const contact = () => {
           name="description"
           content="The official website for the ANAlabas team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
         />
+        <meta property="og:url" content="/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="ANALABS | Contact Us" />
+        <meta
+          property="og:description"
+          content="What problems can we resolve for you ? Get in touch with us now"
+        />
+        <meta property="og:image" content="/favicon.ico" />
       </Head>
       <Container maxWidth="md" component="section" sx={{ marginTop: 15 }}>
         <Typography
