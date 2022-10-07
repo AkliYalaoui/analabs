@@ -13,7 +13,7 @@ const about = () => {
         />
         <meta property="og:url" content="/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="ANALABS | About" />
+        <meta property="og:title" content="The Ninja Developers | About" />
         <meta
           property="og:description"
           content="Our team of engineers build high quality, scalable web and mobile applications and AI solutions. We share the same passion which is computer science, we let our work speak about us and we are proud of what we do."

@@ -23,7 +23,7 @@ const contact = () => {
         />
         <meta property="og:url" content="/contact" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="ANALABS | Contact Us" />
+        <meta property="og:title" content="The Ninja Developers | Contact Us" />
         <meta
           property="og:description"
           content="What problems can we resolve for you ? Get in touch with us now"

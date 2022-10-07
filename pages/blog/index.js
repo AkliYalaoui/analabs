@@ -15,7 +15,7 @@ const blog = ({ allBlogsData }) => {
         />
         <meta property="og:url" content="/blog" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="ANALABS | Blog" />
+        <meta property="og:title" content="The Ninja Developers | Blog" />
         <meta
           property="og:description"
           content="Check out all blogs written by the ninja developers team"

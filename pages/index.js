@@ -15,7 +15,7 @@ export default function Home() {
         />
         <meta property="og:url" content="/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="ANALABS | Home" />
+        <meta property="og:title" content="The Ninja Developers | Home" />
         <meta
           property="og:description"
           content="The official website for the ninja developers team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"

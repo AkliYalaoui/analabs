@@ -21,7 +21,7 @@ const work = ({ projects }) => {
         />
         <meta property="og:url" content="/work" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="ANALABS | Projects" />
+        <meta property="og:title" content="The Ninja Developers | Projects" />
         <meta
           property="og:description"
           content="Made in our labs. Here we present our real world projects and our open source contributions."
