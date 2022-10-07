@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 import {
-  Typography,
   Container,
   Box,
   Link as NavLink,
   Stack,
   IconButton,
+  Avatar,
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
@@ -59,7 +60,7 @@ const Nav = () => {
       <Box
         component="nav"
         sx={{
-          boxShadow: 2,
+          // boxShadow: 2,
           position: "fixed",
           top: "0",
           left: "0",
@@ -68,7 +69,7 @@ const Nav = () => {
           background,
         }}
       >
-        <Container maxWidth="lg" sx={{ padding: 1, color }}>
+        <Container maxWidth="lg" sx={{ color }}>
           <Box
             sx={{
               display: "flex",
@@ -76,9 +77,12 @@ const Nav = () => {
               justifyContent: "space-between",
             }}
           >
-            <Typography variant="h4" component="h1" color={color === "white" ? color : "#cf6a87"} fontWeight="bold">
-              ANAlabs
-            </Typography>
+            <Image
+              src="/logo.png"
+              alt="the ninja developers"
+              width="230"
+              height="90"
+            />
             <Box sx={{ display: { xs: "none", md: "flex" }, gap: 3 }}>
               {pages.map((page) => (
                 <Link key={page.title} href={page.href}>

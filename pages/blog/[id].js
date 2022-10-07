@@ -6,7 +6,7 @@ const Post = ({ postData }) => {
   return (
     <>
       <Head>
-        <title>ANALABS | {postData.title}</title>
+        <title>The Ninja Developers | {postData.title}</title>
         <meta name="description" content={postData.description} />
         <meta property="og:url" content={`/blog/${postData.id}`} />
         <meta property="og:type" content="article" />

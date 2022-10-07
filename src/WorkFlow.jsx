@@ -100,7 +100,7 @@ const WorkFlow = () => {
                 Code
               </Typography>
               <Typography color="#ddd">
-                Develop functional and scalable products.
+                Develop functional and scalable products with clean and testable code.
               </Typography>
             </TimelineContent>
           </TimelineItem>
@@ -117,7 +117,7 @@ const WorkFlow = () => {
                 Deploy
               </Typography>
               <Typography color="#ddd">
-                Deliver your product and launch it.
+                Deliver your product and launch it for the end users.
               </Typography>
             </TimelineContent>
           </TimelineItem>

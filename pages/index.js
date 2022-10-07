@@ -8,17 +8,17 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>ANALABS | Home</title>
+        <title>The Ninja Developers | Home</title>
         <meta
           name="description"
-          content="The official website for the ANAlabas team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
+          content="The official website for the ninja developers team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
         />
         <meta property="og:url" content="/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="ANALABS | Home" />
         <meta
           property="og:description"
-          content="The official website for the ANAlabas team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
+          content="The official website for the ninja developers team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
         />
         <meta property="og:image" content="/favicon.ico" />
       </Head>

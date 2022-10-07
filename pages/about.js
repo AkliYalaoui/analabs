@@ -6,10 +6,10 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>ANALABS | About Us</title>
+        <title>The Ninja Developers | About Us</title>
         <meta
           name="description"
-          content="The official website for the ANAlabas team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
+          content="The official website for the ninja developers team. we are computer scientist with divers background in the feild. we make your ideas concret and solve your problems. we develop mobile apps, web apps and AI solutions"
         />
         <meta property="og:url" content="/about" />
         <meta property="og:type" content="website" />

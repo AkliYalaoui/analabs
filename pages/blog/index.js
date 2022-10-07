@@ -8,17 +8,17 @@ const blog = ({ allBlogsData }) => {
   return (
     <>
       <Head>
-        <title>ANALABS | Blog</title>
+        <title>The Ninja Developers | Blog</title>
         <meta
           name="description"
-          content="Analabs blog ... here we share our thoughts and our work clearly explained."
+          content="The ninja developers blog ... here we share our thoughts and our work clearly explained."
         />
         <meta property="og:url" content="/blog" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="ANALABS | Blog" />
         <meta
           property="og:description"
-          content="Check out all blogs written by the analabs team"
+          content="Check out all blogs written by the ninja developers team"
         />
         <meta property="og:image" content={allBlogsData[0].thumbnail} />
       </Head>

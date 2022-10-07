@@ -1,7 +1,8 @@
 import { Box, Container, Typography, Button } from "@mui/material";
-import EmailIcon from "@mui/icons-material/Email";
+import { useRouter } from "next/router";
 
 const HeaderSection = () => {
+  const router = useRouter();
   return (
     <Box
       sx={{
@@ -57,7 +58,14 @@ const HeaderSection = () => {
             developement, <br />
             mobile developement and AI who will make your ideas alive.
           </Typography>
-          <Button variant="contained">Contact Us</Button>
+          <Button
+            variant="contained"
+            onClick={() => {
+              router.push("/contact");
+            }}
+          >
+            Contact Us
+          </Button>
         </Box>
       </Container>
     </Box>

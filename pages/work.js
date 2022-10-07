@@ -14,10 +14,10 @@ const work = ({ projects }) => {
   return (
     <>
       <Head>
-        <title>ANALABS | Projects</title>
+        <title>The Ninja Developers | Projects</title>
         <meta
           name="description"
-          content="Analabs Projects ... here we present our previous projects"
+          content="The Ninja Developers Projects ... here we present our previous projects"
         />
         <meta property="og:url" content="/work" />
         <meta property="og:type" content="website" />
